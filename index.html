@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Masters Pool</title>
+<style>
+  :root {
+    --masters-green: #006747;
+    --dark-green: #004d35;
+    --masters-yellow: #f2c75c;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #6c757d;
+    --border: #dee2e6;
+    --red: #dc3545;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--masters-green), var(--dark-green));
+    color: white; padding: 2rem 1rem; text-align: center;
+  }
+  .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem; }
+  .header .subtitle { font-size: 1rem; opacity: 0.85; }
+  .header .year {
+    font-size: 3rem; font-weight: 800;
+    color: var(--masters-yellow); letter-spacing: 2px;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 1.5rem 1rem; }
+  .updated { text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem; }
+
+  .status-banner {
+    background: var(--masters-yellow); color: #333;
+    text-align: center; padding: 0.7rem;
+    font-weight: 600; font-size: 0.95rem;
+    border-radius: 8px; margin-bottom: 1.5rem;
+  }
+  .status-banner.projected { background: #d4edda; color: #155724; }
+  .status-banner.final { background: var(--masters-green); color: white; font-size: 1.1rem; }
+
+  /* Leaderboard */
+  .leaderboard {
+    width: 100%; border-collapse: collapse;
+    background: var(--card-bg); border-radius: 12px;
+    overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+  }
+  .leaderboard th {
+    background: var(--masters-green); color: white;
+    padding: 0.75rem 1rem; text-align: left;
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .leaderboard th.money { text-align: right; }
+  .leaderboard td {
+    padding: 0.65rem 1rem; border-bottom: 1px solid var(--border); font-size: 0.95rem;
+  }
+  .leaderboard td.money {
+    text-align: right; font-weight: 700;
+    font-variant-numeric: tabular-nums; font-size: 1rem;
+    color: var(--masters-green);
+  }
+  .leaderboard tr:last-child td { border-bottom: none; }
+  .leaderboard tr:hover { background: #f0faf0; }
+  .leaderboard tr.top { background: #f0f9f0; }
+  .rank {
+    display: inline-block; min-width: 2rem;
+    text-align: center; font-weight: 700; font-size: 1.1rem;
+  }
+  .contestant-name { font-weight: 600; font-size: 1.05rem; }
+  .best-golfer { color: var(--text-muted); font-size: 0.8rem; margin-left: 0.5rem; }
+
+  /* Pick cards */
+  .picks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 1rem; margin-bottom: 2rem;
+  }
+  .pick-card {
+    background: var(--card-bg); border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06); overflow: hidden;
+  }
+  .pick-card-header {
+    background: var(--masters-green); color: white;
+    padding: 0.6rem 1rem; display: flex;
+    justify-content: space-between; align-items: center;
+  }
+  .pick-card-header .name { font-weight: 700; font-size: 1.05rem; }
+  .pick-card-header .total { font-weight: 600; color: var(--masters-yellow); }
+  .pick-card-header .rank-num {
+    background: var(--masters-yellow); color: #333;
+    border-radius: 50%; width: 1.6rem; height: 1.6rem;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.8rem; margin-right: 0.5rem;
+  }
+  .pick-card table { width: 100%; border-collapse: collapse; }
+  .pick-card td {
+    padding: 0.45rem 0.75rem; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem;
+  }
+  .pick-card tr:last-child td { border-bottom: none; }
+  .pick-card .golfer-name { font-weight: 500; }
+  .pick-card .score { color: var(--text-muted); text-align: center; min-width: 4rem; white-space: nowrap; }
+  .pick-card .score.under-par { color: var(--red); font-weight: 600; }
+  .pick-card .pick-amt {
+    text-align: right; font-variant-numeric: tabular-nums;
+    color: var(--text-muted); min-width: 5rem;
+  }
+  .pick-card .pick-amt.has-earnings { color: var(--masters-green); font-weight: 600; }
+
+  .pos {
+    display: inline-block; background: #e9ecef;
+    border-radius: 4px; padding: 0.1rem 0.4rem;
+    font-size: 0.75rem; font-weight: 700; margin-right: 0.35rem;
+    min-width: 2rem; text-align: center;
+  }
+  .pos.pos-leader { background: var(--masters-yellow); color: #333; }
+  .pos.pos-top10 { background: #d4edda; color: #155724; }
+  .pos.mc { background: #f8d7da; color: #721c24; }
+
+  .footer {
+    text-align: center; color: var(--text-muted);
+    font-size: 0.8rem; padding: 2rem 0;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 1.4rem; }
+    .header .year { font-size: 2rem; }
+    .picks-grid { grid-template-columns: 1fr; }
+    .leaderboard th, .leaderboard td { padding: 0.5rem 0.5rem; font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="year">2026</div>
+  <h1>Masters Pool</h1>
+  <div class="subtitle">Augusta National Golf Club</div>
+</div>
+
+<div class="container">
+  <div class="updated">Last updated: April 09, 2026 at 08:04 AM</div>
+  <div class="status-banner projected">⛳ Projected Standings: Round 1 — In Progress</div>
+
+  <h2 style="margin-bottom:0.75rem;">Leaderboard</h2>
+  <table class="leaderboard">
+    <thead>
+      <tr>
+        <th style="width:3rem;">#</th>
+        <th>Contestant</th>
+        <th class="money">Projected Earnings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="top">
+        <td><span class="rank gold">🥇</span></td>
+        <td><span class="contestant-name">Milo</span><span class="best-golfer">Best: Patrick Reed</span></td>
+        <td class="money">$7,640,000</td>
+      </tr>
+      <tr class="top">
+        <td><span class="rank silver">🥈</span></td>
+        <td><span class="contestant-name">Brian</span><span class="best-golfer">Best: Patrick Reed</span></td>
+        <td class="money">$5,680,000</td>
+      </tr>
+      <tr class="top">
+        <td><span class="rank bronze">🥉</span></td>
+        <td><span class="contestant-name">Pat</span><span class="best-golfer">Best: Tommy Fleetwood</span></td>
+        <td class="money">$4,760,000</td>
+      </tr>
+      <tr class="top">
+        <td><span class="rank bronze">🥉</span></td>
+        <td><span class="contestant-name">Gabe</span><span class="best-golfer">Best: Tommy Fleetwood</span></td>
+        <td class="money">$4,760,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">5</span></td>
+        <td><span class="contestant-name">Nick</span><span class="best-golfer">Best: Tommy Fleetwood</span></td>
+        <td class="money">$4,510,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">6</span></td>
+        <td><span class="contestant-name">JJ</span><span class="best-golfer">Best: Tommy Fleetwood</span></td>
+        <td class="money">$4,040,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">7</span></td>
+        <td><span class="contestant-name">Ben</span><span class="best-golfer">Best: Tommy Fleetwood</span></td>
+        <td class="money">$3,790,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">8</span></td>
+        <td><span class="contestant-name">Geoff</span><span class="best-golfer">Best: Akshay Bhatia</span></td>
+        <td class="money">$2,240,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">9</span></td>
+        <td><span class="contestant-name">Benny</span><span class="best-golfer">Best: Xander Schauffele</span></td>
+        <td class="money">$1,600,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">10</span></td>
+        <td><span class="contestant-name">Brandon</span><span class="best-golfer">Best: Bryson DeChambeau</span></td>
+        <td class="money">$1,260,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">11</span></td>
+        <td><span class="contestant-name">Paul</span><span class="best-golfer">Best: Russell Henley</span></td>
+        <td class="money">$1,160,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">12</span></td>
+        <td><span class="contestant-name">Billy</span><span class="best-golfer">Best: Xander Schauffele</span></td>
+        <td class="money">$910,000</td>
+      </tr>
+      <tr>
+        <td><span class="rank">13</span></td>
+        <td><span class="contestant-name">Josh</span><span class="best-golfer">Best: Bryson DeChambeau</span></td>
+        <td class="money">$630,000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-bottom:0.75rem;">Picks</h2>
+  <div class="picks-grid">
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">1</span><span class="name">Milo</span></span>
+        <span class="total">$7,640,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Rory McIlroy</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Justin Rose</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Patrick Reed</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Tommy Fleetwood</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+        <tr><td class="golfer-name">Jacob Bridgeman</td><td class="score"></td><td class="pick-amt">-</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">2</span><span class="name">Brian</span></span>
+        <span class="total">$5,680,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Patrick Reed</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Xander Schauffele</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T3</span>Akshay Bhatia</td><td class="score under-par">-2 (-2)</td><td class="pick-amt has-earnings">$1,360,000</td></tr>
+        <tr><td class="golfer-name">Justin Rose</td><td class="score"></td><td class="pick-amt">-</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">3</span><span class="name">Pat</span></span>
+        <span class="total">$4,760,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Scottie Scheffler</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Rory McIlroy</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Xander Schauffele</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Tommy Fleetwood</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">3</span><span class="name">Gabe</span></span>
+        <span class="total">$4,760,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Tommy Fleetwood</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Xander Schauffele</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Bryson DeChambeau</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Ludvig Åberg</td><td class="score"></td><td class="pick-amt">-</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">5</span><span class="name">Nick</span></span>
+        <span class="total">$4,510,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Ludvig Åberg</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Xander Schauffele</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Tommy Fleetwood</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T25</span>Cameron Young</td><td class="score">+1 (+1)</td><td class="pick-amt has-earnings">$190,000</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">6</span><span class="name">JJ</span></span>
+        <span class="total">$4,040,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Scottie Scheffler</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Rory McIlroy</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Jordan Spieth</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Tommy Fleetwood</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+        <tr><td class="golfer-name">Justin Rose</td><td class="score"></td><td class="pick-amt">-</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">7</span><span class="name">Ben</span></span>
+        <span class="total">$3,790,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Scottie Scheffler</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name">Ludvig Åberg</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T25</span>Matt Fitzpatrick</td><td class="score">+1 (+1)</td><td class="pick-amt has-earnings">$190,000</td></tr>
+        <tr><td class="golfer-name">Jacob Bridgeman</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-leader">T1</span>Tommy Fleetwood</td><td class="score under-par">-3 (-3)</td><td class="pick-amt has-earnings">$3,600,000</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">8</span><span class="name">Geoff</span></span>
+        <span class="total">$2,240,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Rory McIlroy</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T3</span>Akshay Bhatia</td><td class="score under-par">-2 (-2)</td><td class="pick-amt has-earnings">$1,360,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Bryson DeChambeau</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Brooks Koepka</td><td class="score"></td><td class="pick-amt">-</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">9</span><span class="name">Benny</span></span>
+        <span class="total">$1,600,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Scottie Scheffler</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Bryson DeChambeau</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Rory McIlroy</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Xander Schauffele</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">10</span><span class="name">Brandon</span></span>
+        <span class="total">$1,260,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name"><span class="pos">T25</span>Cameron Young</td><td class="score">+1 (+1)</td><td class="pick-amt has-earnings">$190,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Bryson DeChambeau</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T25</span>Matt Fitzpatrick</td><td class="score">+1 (+1)</td><td class="pick-amt has-earnings">$190,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Rory McIlroy</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">11</span><span class="name">Paul</span></span>
+        <span class="total">$1,160,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Marco Penge</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name">Justin Rose</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Jake Knapp</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Maverick McNealy</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Russell Henley</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">12</span><span class="name">Billy</span></span>
+        <span class="total">$910,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Scottie Scheffler</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos pos-top10">T6</span>Xander Schauffele</td><td class="score under-par">-1 (-1)</td><td class="pick-amt has-earnings">$720,000</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T25</span>Matt Fitzpatrick</td><td class="score">+1 (+1)</td><td class="pick-amt has-earnings">$190,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name">Ludvig Åberg</td><td class="score"></td><td class="pick-amt">-</td></tr>
+      </table>
+    </div>
+    <div class="pick-card">
+      <div class="pick-card-header">
+        <span><span class="rank-num">13</span><span class="name">Josh</span></span>
+        <span class="total">$630,000</span>
+      </div>
+      <table>
+        <tr><td class="golfer-name">Scottie Scheffler</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name">Ludvig Åberg</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T13</span>Bryson DeChambeau</td><td class="score">E (E)</td><td class="pick-amt has-earnings">$440,000</td></tr>
+        <tr><td class="golfer-name">Jon Rahm</td><td class="score"></td><td class="pick-amt">-</td></tr>
+        <tr><td class="golfer-name"><span class="pos">T25</span>Cameron Young</td><td class="score">+1 (+1)</td><td class="pick-amt has-earnings">$190,000</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    13 contestants &middot; 5 picks each &middot; highest combined earnings wins<br>
+    Projected earnings based on current leaderboard position and $20M purse
+  </div>
+</div>
+
+</body>
+</html>
