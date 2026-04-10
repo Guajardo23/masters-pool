@@ -1,6 +1,6 @@
 {
     "round": "Round 0100",
-    "status": "Not Started",
+    "status": "In Progress",
     "golfers": {
         "Sam Burns": {
             "position": "T1",
@@ -101,8 +101,8 @@
         "Samuel Stevens": {
             "position": "T17",
             "score": "E",
-            "today": "",
-            "thru": ""
+            "today": "E",
+            "thru": "1"
         },
         "Wyndham Clark": {
             "position": "T17",
@@ -335,8 +335,8 @@
         "Sungjae Im": {
             "position": "T56",
             "score": "+4",
-            "today": "",
-            "thru": ""
+            "today": "E",
+            "thru": "1"
         },
         "Nicolai Højgaard": {
             "position": "T56",
