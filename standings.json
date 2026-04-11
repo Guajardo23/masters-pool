@@ -1,6 +1,6 @@
 {
     "round": "Round 0010",
-    "status": "Not Started",
+    "status": "In Progress",
     "golfers": {
         "Rory McIlroy": {
             "position": "1",
@@ -278,6 +278,12 @@
             "today": "",
             "thru": ""
         },
+        "Alex Noren": {
+            "position": "T47",
+            "score": "+4",
+            "today": "E",
+            "thru": "2"
+        },
         "Brian Harman": {
             "position": "T47",
             "score": "+4",
@@ -302,29 +308,23 @@
             "today": "",
             "thru": ""
         },
+        "Kurt Kitayama": {
+            "position": "T52",
+            "score": "+5",
+            "today": "+1",
+            "thru": "2"
+        },
         "Charl Schwartzel": {
-            "position": "T47",
-            "score": "+4",
-            "today": "",
-            "thru": ""
+            "position": "T52",
+            "score": "+5",
+            "today": "+1",
+            "thru": "1"
         },
         "Rasmus Højgaard": {
-            "position": "T47",
-            "score": "+4",
-            "today": "",
-            "thru": ""
-        },
-        "Kurt Kitayama": {
-            "position": "T47",
-            "score": "+4",
-            "today": "",
-            "thru": ""
-        },
-        "Alex Noren": {
-            "position": "T47",
-            "score": "+4",
-            "today": "",
-            "thru": ""
+            "position": "T52",
+            "score": "+5",
+            "today": "+1",
+            "thru": "1"
         },
         "Danny Willett": {
             "position": "",
