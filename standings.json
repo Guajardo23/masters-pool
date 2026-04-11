@@ -3,124 +3,124 @@
     "status": "In Progress",
     "golfers": {
         "Cameron Young": {
-            "position": "1",
+            "position": "T1",
             "score": "-11",
             "today": "-7",
-            "thru": "17"
+            "thru": "F"
         },
         "Rory McIlroy": {
-            "position": "T2",
-            "score": "-10",
-            "today": "+2",
-            "thru": "13"
+            "position": "T1",
+            "score": "-11",
+            "today": "+1",
+            "thru": "17"
         },
         "Sam Burns": {
-            "position": "T2",
+            "position": "3",
             "score": "-10",
             "today": "-4",
-            "thru": "13"
+            "thru": "17"
         },
         "Shane Lowry": {
             "position": "4",
             "score": "-9",
             "today": "-4",
-            "thru": "14"
+            "thru": "F"
         },
         "Jason Day": {
             "position": "T5",
             "score": "-8",
             "today": "-4",
-            "thru": "17"
-        },
-        "Haotong Li": {
-            "position": "T5",
-            "score": "-8",
-            "today": "-4",
-            "thru": "17"
+            "thru": "F"
         },
         "Justin Rose": {
             "position": "T5",
             "score": "-8",
             "today": "-3",
-            "thru": "14"
+            "thru": "F"
         },
         "Scottie Scheffler": {
-            "position": "T8",
+            "position": "T7",
             "score": "-7",
             "today": "-7",
             "thru": "F"
         },
-        "Patrick Reed": {
-            "position": "T8",
+        "Haotong Li": {
+            "position": "T7",
             "score": "-7",
-            "today": "-1",
-            "thru": "14"
+            "today": "-3",
+            "thru": "F"
         },
         "Patrick Cantlay": {
-            "position": "T10",
+            "position": "T9",
             "score": "-6",
             "today": "-6",
             "thru": "F"
         },
         "Russell Henley": {
-            "position": "T10",
+            "position": "T9",
             "score": "-6",
             "today": "-6",
             "thru": "F"
         },
-        "Wyndham Clark": {
-            "position": "T10",
+        "Patrick Reed": {
+            "position": "T9",
             "score": "-6",
-            "today": "-2",
-            "thru": "16"
+            "today": "E",
+            "thru": "F"
         },
         "Collin Morikawa": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-4",
             "thru": "F"
         },
         "Jake Knapp": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-3",
             "thru": "F"
         },
         "Ben Griffin": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-2",
             "thru": "F"
         },
         "Ryan Gerard": {
-            "position": "T16",
+            "position": "T15",
             "score": "-4",
             "today": "-4",
             "thru": "F"
         },
         "Xander Schauffele": {
-            "position": "T16",
+            "position": "T15",
             "score": "-4",
             "today": "-2",
             "thru": "F"
         },
         "Brooks Koepka": {
-            "position": "T16",
+            "position": "T15",
             "score": "-4",
             "today": "-1",
             "thru": "F"
         },
-        "Tyrrell Hatton": {
-            "position": "T16",
+        "Wyndham Clark": {
+            "position": "T15",
             "score": "-4",
             "today": "E",
-            "thru": "15"
+            "thru": "F"
+        },
+        "Tyrrell Hatton": {
+            "position": "T15",
+            "score": "-4",
+            "today": "E",
+            "thru": "F"
         },
         "Tommy Fleetwood": {
-            "position": "T16",
+            "position": "T15",
             "score": "-4",
             "today": "+1",
-            "thru": "14"
+            "thru": "F"
         },
         "Ludvig Åberg": {
             "position": "T21",
@@ -168,7 +168,7 @@
             "position": "T21",
             "score": "-3",
             "today": "+1",
-            "thru": "17"
+            "thru": "F"
         },
         "Sepp Straka": {
             "position": "T29",
