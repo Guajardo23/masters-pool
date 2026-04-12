@@ -32,12 +32,6 @@
             "today": "-2",
             "thru": "17"
         },
-        "Sam Burns": {
-            "position": "T3",
-            "score": "-10",
-            "today": "E",
-            "thru": "16"
-        },
         "Cameron Young": {
             "position": "T3",
             "score": "-10",
@@ -45,10 +39,16 @@
             "thru": "16"
         },
         "Collin Morikawa": {
-            "position": "8",
+            "position": "T7",
             "score": "-9",
             "today": "-4",
             "thru": "F"
+        },
+        "Sam Burns": {
+            "position": "T7",
+            "score": "-9",
+            "today": "+1",
+            "thru": "17"
         },
         "Max Homa": {
             "position": "T9",
@@ -180,7 +180,7 @@
             "position": "T24",
             "score": "-2",
             "today": "+7",
-            "thru": "16"
+            "thru": "17"
         },
         "Alex Noren": {
             "position": "T31",
