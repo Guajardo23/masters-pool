@@ -2,32 +2,32 @@
     "round": "Round 0001",
     "status": "In Progress",
     "golfers": {
-        "Justin Rose": {
-            "position": "T1",
-            "score": "-11",
-            "today": "-3",
-            "thru": "11"
-        },
         "Rory McIlroy": {
-            "position": "T1",
+            "position": "1",
             "score": "-11",
             "today": "E",
             "thru": "10"
         },
         "Tyrrell Hatton": {
-            "position": "T3",
+            "position": "T2",
             "score": "-10",
             "today": "-6",
             "thru": "F"
         },
         "Russell Henley": {
-            "position": "T3",
+            "position": "T2",
             "score": "-10",
             "today": "-4",
-            "thru": "13"
+            "thru": "14"
+        },
+        "Justin Rose": {
+            "position": "T2",
+            "score": "-10",
+            "today": "-2",
+            "thru": "12"
         },
         "Cameron Young": {
-            "position": "T3",
+            "position": "T2",
             "score": "-10",
             "today": "+1",
             "thru": "10"
@@ -50,59 +50,59 @@
             "today": "-4",
             "thru": "17"
         },
+        "Collin Morikawa": {
+            "position": "T7",
+            "score": "-8",
+            "today": "-3",
+            "thru": "15"
+        },
         "Jake Knapp": {
-            "position": "T9",
+            "position": "T10",
             "score": "-7",
             "today": "-2",
             "thru": "16"
         },
-        "Collin Morikawa": {
-            "position": "T9",
-            "score": "-7",
-            "today": "-2",
-            "thru": "14"
-        },
         "Sam Burns": {
-            "position": "T9",
+            "position": "T10",
             "score": "-7",
             "today": "+3",
-            "thru": "10"
-        },
-        "Shane Lowry": {
-            "position": "12",
-            "score": "-6",
-            "today": "+3",
-            "thru": "10"
+            "thru": "11"
         },
         "Jordan Spieth": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-4",
             "thru": "F"
         },
         "Hideki Matsuyama": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-3",
             "thru": "F"
         },
         "Brooks Koepka": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-1",
             "thru": "F"
         },
-        "Patrick Cantlay": {
-            "position": "T13",
+        "Patrick Reed": {
+            "position": "T12",
             "score": "-5",
             "today": "+1",
-            "thru": "13"
+            "thru": "15"
+        },
+        "Patrick Cantlay": {
+            "position": "T12",
+            "score": "-5",
+            "today": "+1",
+            "thru": "14"
         },
         "Jason Day": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "+3",
-            "thru": "11"
+            "thru": "12"
         },
         "Viktor Hovland": {
             "position": "T18",
@@ -122,17 +122,17 @@
             "today": "-1",
             "thru": "F"
         },
-        "Patrick Reed": {
-            "position": "T18",
-            "score": "-4",
-            "today": "+2",
-            "thru": "14"
-        },
         "Haotong Li": {
             "position": "T18",
             "score": "-4",
             "today": "+3",
             "thru": "12"
+        },
+        "Shane Lowry": {
+            "position": "T18",
+            "score": "-4",
+            "today": "+5",
+            "thru": "11"
         },
         "Keegan Bradley": {
             "position": "T23",
@@ -150,7 +150,7 @@
             "position": "T23",
             "score": "-3",
             "today": "+1",
-            "thru": "17"
+            "thru": "F"
         },
         "Matt McCarty": {
             "position": "T26",
