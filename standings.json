@@ -24,7 +24,7 @@
             "position": "4",
             "score": "-10",
             "today": "-6",
-            "thru": "16"
+            "thru": "17"
         },
         "Russell Henley": {
             "position": "T5",
@@ -194,44 +194,44 @@
             "today": "+1",
             "thru": "17"
         },
-        "Tommy Fleetwood": {
-            "position": "T27",
-            "score": "-2",
-            "today": "+2",
-            "thru": "16"
-        },
         "Alex Noren": {
-            "position": "T34",
+            "position": "T33",
             "score": "-1",
             "today": "-2",
             "thru": "F"
         },
         "Harris English": {
-            "position": "T34",
+            "position": "T33",
             "score": "-1",
             "today": "E",
             "thru": "F"
         },
         "Gary Woodland": {
-            "position": "T36",
+            "position": "T35",
             "score": "E",
             "today": "-6",
             "thru": "F"
         },
         "Dustin Johnson": {
-            "position": "T36",
+            "position": "T35",
             "score": "E",
             "today": "-3",
             "thru": "F"
         },
         "Brian Harman": {
-            "position": "T36",
+            "position": "T35",
             "score": "E",
             "today": "+1",
             "thru": "F"
         },
+        "Tommy Fleetwood": {
+            "position": "T35",
+            "score": "E",
+            "today": "+4",
+            "thru": "17"
+        },
         "Ryan Gerard": {
-            "position": "T36",
+            "position": "T35",
             "score": "E",
             "today": "+4",
             "thru": "15"
