@@ -4,9 +4,9 @@
     "golfers": {
         "Rory McIlroy": {
             "position": "1",
-            "score": "-11",
-            "today": "E",
-            "thru": "11"
+            "score": "-12",
+            "today": "-1",
+            "thru": "12"
         },
         "Tyrrell Hatton": {
             "position": "T2",
@@ -24,7 +24,7 @@
             "position": "T2",
             "score": "-10",
             "today": "-2",
-            "thru": "12"
+            "thru": "13"
         },
         "Cameron Young": {
             "position": "T2",
@@ -102,7 +102,7 @@
             "position": "T13",
             "score": "-5",
             "today": "+3",
-            "thru": "12"
+            "thru": "13"
         },
         "Viktor Hovland": {
             "position": "T18",
@@ -222,7 +222,7 @@
             "position": "T33",
             "score": "E",
             "today": "+5",
-            "thru": "17"
+            "thru": "F"
         },
         "Jon Rahm": {
             "position": "T38",
