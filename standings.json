@@ -48,7 +48,7 @@
             "position": "T7",
             "score": "-9",
             "today": "+1",
-            "thru": "17"
+            "thru": "F"
         },
         "Max Homa": {
             "position": "T9",
@@ -176,22 +176,22 @@
             "today": "+1",
             "thru": "F"
         },
-        "Shane Lowry": {
-            "position": "T24",
-            "score": "-2",
-            "today": "+7",
-            "thru": "17"
-        },
         "Alex Noren": {
-            "position": "T31",
+            "position": "T30",
             "score": "-1",
             "today": "-2",
             "thru": "F"
         },
         "Harris English": {
-            "position": "T31",
+            "position": "T30",
             "score": "-1",
             "today": "E",
+            "thru": "F"
+        },
+        "Shane Lowry": {
+            "position": "T30",
+            "score": "-1",
+            "today": "+8",
             "thru": "F"
         },
         "Gary Woodland": {
