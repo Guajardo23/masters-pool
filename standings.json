@@ -4,9 +4,9 @@
     "golfers": {
         "Rory McIlroy": {
             "position": "1",
-            "score": "-12",
-            "today": "-1",
-            "thru": "12"
+            "score": "-13",
+            "today": "-2",
+            "thru": "13"
         },
         "Tyrrell Hatton": {
             "position": "T2",
@@ -18,7 +18,13 @@
             "position": "T2",
             "score": "-10",
             "today": "-4",
-            "thru": "16"
+            "thru": "17"
+        },
+        "Scottie Scheffler": {
+            "position": "T2",
+            "score": "-10",
+            "today": "-3",
+            "thru": "15"
         },
         "Justin Rose": {
             "position": "T2",
@@ -30,37 +36,31 @@
             "position": "T2",
             "score": "-10",
             "today": "+1",
-            "thru": "12"
+            "thru": "13"
         },
         "Collin Morikawa": {
-            "position": "T6",
+            "position": "T7",
             "score": "-9",
             "today": "-4",
-            "thru": "17"
+            "thru": "F"
         },
-        "Scottie Scheffler": {
-            "position": "T6",
+        "Sam Burns": {
+            "position": "T7",
             "score": "-9",
-            "today": "-2",
+            "today": "+1",
             "thru": "14"
         },
         "Max Homa": {
-            "position": "T8",
+            "position": "T9",
             "score": "-8",
             "today": "-5",
             "thru": "F"
         },
         "Xander Schauffele": {
-            "position": "T8",
+            "position": "T9",
             "score": "-8",
             "today": "-4",
             "thru": "F"
-        },
-        "Sam Burns": {
-            "position": "T8",
-            "score": "-8",
-            "today": "+2",
-            "thru": "13"
         },
         "Jake Knapp": {
             "position": "11",
@@ -72,7 +72,7 @@
             "position": "12",
             "score": "-6",
             "today": "E",
-            "thru": "16"
+            "thru": "17"
         },
         "Jordan Spieth": {
             "position": "T13",
@@ -92,6 +92,12 @@
             "today": "-1",
             "thru": "F"
         },
+        "Patrick Reed": {
+            "position": "T13",
+            "score": "-5",
+            "today": "+1",
+            "thru": "F"
+        },
         "Jason Day": {
             "position": "T13",
             "score": "-5",
@@ -99,31 +105,25 @@
             "thru": "14"
         },
         "Viktor Hovland": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-5",
             "thru": "F"
         },
         "Maverick McNealy": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-5",
             "thru": "F"
         },
         "Matt Fitzpatrick": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-1",
             "thru": "F"
         },
-        "Patrick Reed": {
-            "position": "T17",
-            "score": "-4",
-            "today": "+2",
-            "thru": "17"
-        },
         "Shane Lowry": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "+5",
             "thru": "13"
@@ -228,7 +228,7 @@
             "position": "T33",
             "score": "E",
             "today": "+7",
-            "thru": "14"
+            "thru": "15"
         },
         "Jon Rahm": {
             "position": "T39",
