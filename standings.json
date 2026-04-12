@@ -60,7 +60,7 @@
             "position": "T10",
             "score": "-7",
             "today": "-3",
-            "thru": "8"
+            "thru": "9"
         },
         "Patrick Cantlay": {
             "position": "T10",
@@ -80,68 +80,68 @@
             "today": "-3",
             "thru": "9"
         },
+        "Jake Knapp": {
+            "position": "T12",
+            "score": "-6",
+            "today": "-1",
+            "thru": "7"
+        },
         "Xander Schauffele": {
-            "position": "T14",
+            "position": "T15",
             "score": "-5",
             "today": "-1",
             "thru": "7"
         },
-        "Jake Knapp": {
-            "position": "T14",
+        "Ben Griffin": {
+            "position": "T15",
             "score": "-5",
             "today": "E",
-            "thru": "6"
+            "thru": "7"
         },
         "Collin Morikawa": {
-            "position": "T14",
+            "position": "T15",
             "score": "-5",
             "today": "E",
             "thru": "5"
         },
         "Viktor Hovland": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-5",
             "thru": "F"
         },
         "Maverick McNealy": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-5",
             "thru": "F"
         },
         "Jordan Spieth": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-3",
             "thru": "15"
         },
         "Michael Brennan": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-1",
             "thru": "11"
         },
         "Max Homa": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-1",
             "thru": "11"
         },
         "Matt Fitzpatrick": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "-1",
             "thru": "10"
         },
-        "Ben Griffin": {
-            "position": "T17",
-            "score": "-4",
-            "today": "+1",
-            "thru": "6"
-        },
         "Patrick Reed": {
-            "position": "T17",
+            "position": "T18",
             "score": "-4",
             "today": "+2",
             "thru": "5"
