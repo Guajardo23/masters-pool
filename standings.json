@@ -6,43 +6,43 @@
             "position": "1",
             "score": "-13",
             "today": "-2",
-            "thru": "15"
+            "thru": "16"
         },
         "Scottie Scheffler": {
-            "position": "T2",
+            "position": "2",
             "score": "-11",
             "today": "-4",
             "thru": "F"
         },
-        "Justin Rose": {
-            "position": "T2",
-            "score": "-11",
-            "today": "-3",
-            "thru": "16"
-        },
         "Tyrrell Hatton": {
-            "position": "T4",
+            "position": "T3",
             "score": "-10",
             "today": "-6",
             "thru": "F"
         },
         "Russell Henley": {
-            "position": "T4",
+            "position": "T3",
             "score": "-10",
             "today": "-4",
             "thru": "F"
         },
+        "Justin Rose": {
+            "position": "T3",
+            "score": "-10",
+            "today": "-2",
+            "thru": "17"
+        },
         "Sam Burns": {
-            "position": "T4",
+            "position": "T3",
             "score": "-10",
             "today": "E",
             "thru": "16"
         },
         "Cameron Young": {
-            "position": "T4",
+            "position": "T3",
             "score": "-10",
             "today": "+1",
-            "thru": "15"
+            "thru": "16"
         },
         "Collin Morikawa": {
             "position": "8",
