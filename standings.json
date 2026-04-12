@@ -8,29 +8,29 @@
             "today": "-4",
             "thru": "9"
         },
-        "Tyrrell Hatton": {
+        "Cameron Young": {
             "position": "T2",
+            "score": "-11",
+            "today": "E",
+            "thru": "8"
+        },
+        "Rory McIlroy": {
+            "position": "T2",
+            "score": "-11",
+            "today": "E",
+            "thru": "8"
+        },
+        "Tyrrell Hatton": {
+            "position": "T4",
             "score": "-10",
             "today": "-6",
             "thru": "16"
         },
         "Russell Henley": {
-            "position": "T2",
+            "position": "T4",
             "score": "-10",
             "today": "-4",
             "thru": "11"
-        },
-        "Cameron Young": {
-            "position": "T2",
-            "score": "-10",
-            "today": "+1",
-            "thru": "7"
-        },
-        "Rory McIlroy": {
-            "position": "T2",
-            "score": "-10",
-            "today": "+1",
-            "thru": "7"
         },
         "Scottie Scheffler": {
             "position": "6",
@@ -48,7 +48,7 @@
             "position": "T7",
             "score": "-8",
             "today": "+2",
-            "thru": "8"
+            "thru": "9"
         },
         "Xander Schauffele": {
             "position": "T9",
@@ -66,13 +66,13 @@
             "position": "T11",
             "score": "-6",
             "today": "-1",
-            "thru": "13"
+            "thru": "14"
         },
         "Shane Lowry": {
             "position": "T11",
             "score": "-6",
             "today": "+3",
-            "thru": "8"
+            "thru": "9"
         },
         "Jordan Spieth": {
             "position": "T13",
@@ -132,25 +132,25 @@
             "position": "T20",
             "score": "-4",
             "today": "-1",
-            "thru": "17"
-        },
-        "Ludvig Åberg": {
-            "position": "T20",
-            "score": "-4",
-            "today": "-1",
-            "thru": "16"
+            "thru": "F"
         },
         "Keegan Bradley": {
-            "position": "T24",
+            "position": "T23",
             "score": "-3",
             "today": "-6",
             "thru": "F"
         },
+        "Ludvig Åberg": {
+            "position": "T23",
+            "score": "-3",
+            "today": "E",
+            "thru": "17"
+        },
         "Ben Griffin": {
-            "position": "T24",
+            "position": "T23",
             "score": "-3",
             "today": "+2",
-            "thru": "13"
+            "thru": "14"
         },
         "Matt McCarty": {
             "position": "T26",
@@ -186,7 +186,7 @@
             "position": "T26",
             "score": "-2",
             "today": "+1",
-            "thru": "16"
+            "thru": "17"
         },
         "Tommy Fleetwood": {
             "position": "T26",
@@ -260,6 +260,12 @@
             "today": "+5",
             "thru": "F"
         },
+        "Nick Taylor": {
+            "position": "T40",
+            "score": "+2",
+            "today": "+5",
+            "thru": "F"
+        },
         "Ryan Gerard": {
             "position": "T40",
             "score": "+2",
@@ -267,16 +273,10 @@
             "thru": "14"
         },
         "Sungjae Im": {
-            "position": "T45",
+            "position": "46",
             "score": "+3",
             "today": "+5",
             "thru": "F"
-        },
-        "Nick Taylor": {
-            "position": "T45",
-            "score": "+3",
-            "today": "+6",
-            "thru": "17"
         },
         "Si Woo Kim": {
             "position": "47",
