@@ -122,29 +122,29 @@
             "today": "-1",
             "thru": "F"
         },
-        "Shane Lowry": {
-            "position": "T18",
-            "score": "-4",
-            "today": "+5",
-            "thru": "13"
-        },
         "Keegan Bradley": {
-            "position": "T22",
+            "position": "T21",
             "score": "-3",
             "today": "-6",
             "thru": "F"
         },
         "Ludvig Åberg": {
-            "position": "T22",
+            "position": "T21",
             "score": "-3",
             "today": "E",
             "thru": "F"
         },
         "Wyndham Clark": {
-            "position": "T22",
+            "position": "T21",
             "score": "-3",
             "today": "+1",
             "thru": "F"
+        },
+        "Shane Lowry": {
+            "position": "T21",
+            "score": "-3",
+            "today": "+6",
+            "thru": "14"
         },
         "Matt McCarty": {
             "position": "T25",
