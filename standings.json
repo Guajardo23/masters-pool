@@ -152,12 +152,6 @@
             "today": "-6",
             "thru": "F"
         },
-        "Adam Scott": {
-            "position": "T25",
-            "score": "-3",
-            "today": "-3",
-            "thru": "17"
-        },
         "Brooks Koepka": {
             "position": "T25",
             "score": "-3",
@@ -171,25 +165,31 @@
             "thru": "9"
         },
         "Matt McCarty": {
-            "position": "T29",
+            "position": "T28",
             "score": "-2",
             "today": "-3",
             "thru": "F"
         },
+        "Adam Scott": {
+            "position": "T28",
+            "score": "-2",
+            "today": "-2",
+            "thru": "F"
+        },
         "Samuel Stevens": {
-            "position": "T29",
+            "position": "T28",
             "score": "-2",
             "today": "-2",
             "thru": "17"
         },
         "Chris Gotterup": {
-            "position": "T29",
+            "position": "T28",
             "score": "-2",
             "today": "+1",
-            "thru": "12"
+            "thru": "13"
         },
         "Tommy Fleetwood": {
-            "position": "T29",
+            "position": "T28",
             "score": "-2",
             "today": "+2",
             "thru": "9"
@@ -230,12 +230,6 @@
             "today": "-3",
             "thru": "F"
         },
-        "Nick Taylor": {
-            "position": "T37",
-            "score": "E",
-            "today": "+3",
-            "thru": "10"
-        },
         "Ryan Gerard": {
             "position": "T37",
             "score": "E",
@@ -243,16 +237,22 @@
             "thru": "8"
         },
         "Jon Rahm": {
-            "position": "T41",
+            "position": "T40",
             "score": "+1",
             "today": "-4",
             "thru": "F"
         },
         "Jacob Bridgeman": {
-            "position": "T41",
+            "position": "T40",
             "score": "+1",
             "today": "+3",
-            "thru": "13"
+            "thru": "14"
+        },
+        "Nick Taylor": {
+            "position": "T40",
+            "score": "+1",
+            "today": "+4",
+            "thru": "11"
         },
         "Justin Thomas": {
             "position": "T43",
@@ -264,19 +264,19 @@
             "position": "T43",
             "score": "+2",
             "today": "+4",
-            "thru": "13"
-        },
-        "Sungjae Im": {
-            "position": "T45",
-            "score": "+3",
-            "today": "+5",
             "thru": "14"
         },
         "Kristoffer Reitan": {
-            "position": "T45",
+            "position": "T43",
+            "score": "+2",
+            "today": "+5",
+            "thru": "13"
+        },
+        "Sungjae Im": {
+            "position": "46",
             "score": "+3",
-            "today": "+6",
-            "thru": "12"
+            "today": "+5",
+            "thru": "14"
         },
         "Si Woo Kim": {
             "position": "47",
@@ -300,7 +300,7 @@
             "position": "T49",
             "score": "+6",
             "today": "+6",
-            "thru": "17"
+            "thru": "F"
         },
         "Kurt Kitayama": {
             "position": "51",
