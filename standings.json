@@ -12,7 +12,7 @@
             "position": "T2",
             "score": "-11",
             "today": "-4",
-            "thru": "16"
+            "thru": "17"
         },
         "Justin Rose": {
             "position": "T2",
@@ -102,7 +102,7 @@
             "position": "T12",
             "score": "-5",
             "today": "+3",
-            "thru": "15"
+            "thru": "16"
         },
         "Viktor Hovland": {
             "position": "T18",
@@ -224,23 +224,23 @@
             "today": "+5",
             "thru": "F"
         },
-        "Haotong Li": {
-            "position": "T33",
-            "score": "E",
-            "today": "+7",
-            "thru": "16"
-        },
         "Jon Rahm": {
-            "position": "T39",
+            "position": "T38",
             "score": "+1",
             "today": "-4",
             "thru": "F"
         },
         "Ryan Gerard": {
-            "position": "T39",
+            "position": "T38",
             "score": "+1",
             "today": "+5",
             "thru": "F"
+        },
+        "Haotong Li": {
+            "position": "T38",
+            "score": "+1",
+            "today": "+8",
+            "thru": "17"
         },
         "Justin Thomas": {
             "position": "T41",
