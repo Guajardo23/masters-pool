@@ -1,6 +1,6 @@
 {
     "round": "Round 0001",
-    "status": "Not Started",
+    "status": "In Progress",
     "golfers": {
         "Cameron Young": {
             "position": "T1",
@@ -260,6 +260,12 @@
             "today": "",
             "thru": ""
         },
+        "Si Woo Kim": {
+            "position": "T44",
+            "score": "+3",
+            "today": "-1",
+            "thru": "1"
+        },
         "Corey Conners": {
             "position": "T44",
             "score": "+3",
@@ -278,53 +284,47 @@
             "today": "",
             "thru": ""
         },
-        "Si Woo Kim": {
-            "position": "47",
-            "score": "+4",
-            "today": "",
-            "thru": ""
-        },
-        "Rasmus Højgaard": {
-            "position": "T48",
-            "score": "+5",
-            "today": "",
-            "thru": ""
-        },
         "Jon Rahm": {
-            "position": "T48",
-            "score": "+5",
-            "today": "",
-            "thru": ""
-        },
-        "Sergio Garcia": {
-            "position": "T48",
-            "score": "+5",
-            "today": "",
-            "thru": ""
+            "position": "48",
+            "score": "+4",
+            "today": "-1",
+            "thru": "2"
         },
         "Gary Woodland": {
-            "position": "51",
-            "score": "+6",
-            "today": "",
-            "thru": ""
+            "position": "49",
+            "score": "+5",
+            "today": "-1",
+            "thru": "3"
         },
         "Kurt Kitayama": {
-            "position": "T52",
-            "score": "+7",
-            "today": "",
-            "thru": ""
+            "position": "T50",
+            "score": "+6",
+            "today": "-1",
+            "thru": "3"
+        },
+        "Sergio Garcia": {
+            "position": "T50",
+            "score": "+6",
+            "today": "+1",
+            "thru": "2"
+        },
+        "Rasmus Højgaard": {
+            "position": "T50",
+            "score": "+6",
+            "today": "+1",
+            "thru": "1"
         },
         "Aaron Rai": {
-            "position": "T52",
-            "score": "+7",
-            "today": "",
-            "thru": ""
+            "position": "53",
+            "score": "+8",
+            "today": "+1",
+            "thru": "4"
         },
         "Charl Schwartzel": {
             "position": "54",
-            "score": "+9",
-            "today": "",
-            "thru": ""
+            "score": "+13",
+            "today": "+4",
+            "thru": "4"
         },
         "Danny Willett": {
             "position": "",
