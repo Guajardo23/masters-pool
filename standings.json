@@ -6,7 +6,7 @@
             "position": "1",
             "score": "-13",
             "today": "-2",
-            "thru": "14"
+            "thru": "15"
         },
         "Scottie Scheffler": {
             "position": "T2",
@@ -32,23 +32,23 @@
             "today": "-4",
             "thru": "F"
         },
+        "Sam Burns": {
+            "position": "T4",
+            "score": "-10",
+            "today": "E",
+            "thru": "16"
+        },
         "Cameron Young": {
             "position": "T4",
             "score": "-10",
             "today": "+1",
-            "thru": "14"
+            "thru": "15"
         },
         "Collin Morikawa": {
-            "position": "T7",
+            "position": "8",
             "score": "-9",
             "today": "-4",
             "thru": "F"
-        },
-        "Sam Burns": {
-            "position": "T7",
-            "score": "-9",
-            "today": "+1",
-            "thru": "15"
         },
         "Max Homa": {
             "position": "T9",
@@ -122,65 +122,65 @@
             "today": "-1",
             "thru": "F"
         },
-        "Shane Lowry": {
-            "position": "T18",
-            "score": "-4",
-            "today": "+5",
-            "thru": "15"
-        },
         "Keegan Bradley": {
-            "position": "T22",
+            "position": "T21",
             "score": "-3",
             "today": "-6",
             "thru": "F"
         },
         "Ludvig Åberg": {
-            "position": "T22",
+            "position": "T21",
             "score": "-3",
             "today": "E",
             "thru": "F"
         },
         "Wyndham Clark": {
-            "position": "T22",
+            "position": "T21",
             "score": "-3",
             "today": "+1",
             "thru": "F"
         },
         "Matt McCarty": {
-            "position": "T25",
+            "position": "T24",
             "score": "-2",
             "today": "-3",
             "thru": "F"
         },
         "Adam Scott": {
-            "position": "T25",
+            "position": "T24",
             "score": "-2",
             "today": "-2",
             "thru": "F"
         },
         "Samuel Stevens": {
-            "position": "T25",
+            "position": "T24",
             "score": "-2",
             "today": "-2",
             "thru": "F"
         },
         "Chris Gotterup": {
-            "position": "T25",
+            "position": "T24",
             "score": "-2",
             "today": "+1",
             "thru": "F"
         },
         "Michael Brennan": {
-            "position": "T25",
+            "position": "T24",
             "score": "-2",
             "today": "+1",
             "thru": "F"
         },
         "Brian Campbell": {
-            "position": "T25",
+            "position": "T24",
             "score": "-2",
             "today": "+1",
             "thru": "F"
+        },
+        "Shane Lowry": {
+            "position": "T24",
+            "score": "-2",
+            "today": "+7",
+            "thru": "16"
         },
         "Alex Noren": {
             "position": "T31",
