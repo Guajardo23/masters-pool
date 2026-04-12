@@ -6,37 +6,37 @@
             "position": "1",
             "score": "-13",
             "today": "-2",
-            "thru": "13"
+            "thru": "14"
         },
         "Scottie Scheffler": {
-            "position": "2",
+            "position": "T2",
             "score": "-11",
             "today": "-4",
             "thru": "16"
         },
+        "Justin Rose": {
+            "position": "T2",
+            "score": "-11",
+            "today": "-3",
+            "thru": "15"
+        },
         "Tyrrell Hatton": {
-            "position": "T3",
+            "position": "T4",
             "score": "-10",
             "today": "-6",
             "thru": "F"
         },
         "Russell Henley": {
-            "position": "T3",
+            "position": "T4",
             "score": "-10",
             "today": "-4",
-            "thru": "17"
-        },
-        "Justin Rose": {
-            "position": "T3",
-            "score": "-10",
-            "today": "-2",
-            "thru": "14"
+            "thru": "F"
         },
         "Cameron Young": {
-            "position": "T3",
+            "position": "T4",
             "score": "-10",
             "today": "+1",
-            "thru": "13"
+            "thru": "14"
         },
         "Collin Morikawa": {
             "position": "T7",
@@ -68,38 +68,38 @@
             "today": "-2",
             "thru": "F"
         },
-        "Patrick Cantlay": {
-            "position": "12",
-            "score": "-6",
-            "today": "E",
-            "thru": "17"
-        },
         "Jordan Spieth": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-4",
             "thru": "F"
         },
         "Hideki Matsuyama": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-3",
             "thru": "F"
         },
         "Brooks Koepka": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "-1",
             "thru": "F"
         },
         "Patrick Reed": {
-            "position": "T13",
+            "position": "T12",
+            "score": "-5",
+            "today": "+1",
+            "thru": "F"
+        },
+        "Patrick Cantlay": {
+            "position": "T12",
             "score": "-5",
             "today": "+1",
             "thru": "F"
         },
         "Jason Day": {
-            "position": "T13",
+            "position": "T12",
             "score": "-5",
             "today": "+3",
             "thru": "15"
