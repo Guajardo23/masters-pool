@@ -8,11 +8,17 @@
             "today": "-4",
             "thru": "9"
         },
+        "Tyrrell Hatton": {
+            "position": "T2",
+            "score": "-10",
+            "today": "-6",
+            "thru": "16"
+        },
         "Russell Henley": {
             "position": "T2",
             "score": "-10",
             "today": "-4",
-            "thru": "10"
+            "thru": "11"
         },
         "Cameron Young": {
             "position": "T2",
@@ -26,14 +32,8 @@
             "today": "+1",
             "thru": "7"
         },
-        "Tyrrell Hatton": {
-            "position": "T5",
-            "score": "-9",
-            "today": "-5",
-            "thru": "15"
-        },
         "Scottie Scheffler": {
-            "position": "T5",
+            "position": "6",
             "score": "-9",
             "today": "-2",
             "thru": "10"
@@ -68,12 +68,6 @@
             "today": "-1",
             "thru": "13"
         },
-        "Patrick Cantlay": {
-            "position": "T11",
-            "score": "-6",
-            "today": "E",
-            "thru": "10"
-        },
         "Shane Lowry": {
             "position": "T11",
             "score": "-6",
@@ -81,64 +75,70 @@
             "thru": "8"
         },
         "Jordan Spieth": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "-4",
             "thru": "F"
         },
         "Hideki Matsuyama": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "-3",
             "thru": "F"
         },
+        "Brooks Koepka": {
+            "position": "T13",
+            "score": "-5",
+            "today": "-1",
+            "thru": "15"
+        },
         "Patrick Reed": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "+1",
             "thru": "12"
         },
         "Collin Morikawa": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "E",
             "thru": "12"
         },
+        "Patrick Cantlay": {
+            "position": "T13",
+            "score": "-5",
+            "today": "+1",
+            "thru": "11"
+        },
         "Jason Day": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "+3",
             "thru": "9"
         },
         "Viktor Hovland": {
-            "position": "T19",
+            "position": "T20",
             "score": "-4",
             "today": "-5",
             "thru": "F"
         },
         "Maverick McNealy": {
-            "position": "T19",
+            "position": "T20",
             "score": "-4",
             "today": "-5",
             "thru": "F"
         },
         "Matt Fitzpatrick": {
-            "position": "T19",
+            "position": "T20",
             "score": "-4",
             "today": "-1",
             "thru": "17"
         },
         "Ludvig Åberg": {
-            "position": "T19",
+            "position": "T20",
             "score": "-4",
             "today": "-1",
             "thru": "16"
-        },
-        "Brooks Koepka": {
-            "position": "T19",
-            "score": "-4",
-            "today": "E",
-            "thru": "14"
         },
         "Keegan Bradley": {
             "position": "T24",
@@ -188,29 +188,29 @@
             "today": "+1",
             "thru": "16"
         },
+        "Tommy Fleetwood": {
+            "position": "T26",
+            "score": "-2",
+            "today": "+2",
+            "thru": "16"
+        },
         "Wyndham Clark": {
             "position": "T26",
             "score": "-2",
             "today": "+2",
-            "thru": "14"
+            "thru": "15"
         },
         "Alex Noren": {
-            "position": "T33",
+            "position": "T34",
             "score": "-1",
             "today": "-2",
             "thru": "F"
         },
         "Harris English": {
-            "position": "T33",
+            "position": "T34",
             "score": "-1",
             "today": "E",
             "thru": "F"
-        },
-        "Tommy Fleetwood": {
-            "position": "T33",
-            "score": "-1",
-            "today": "+3",
-            "thru": "15"
         },
         "Gary Woodland": {
             "position": "T36",
