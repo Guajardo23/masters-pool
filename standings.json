@@ -3,13 +3,13 @@
     "status": "In Progress",
     "golfers": {
         "Justin Rose": {
-            "position": "1",
-            "score": "-12",
-            "today": "-4",
-            "thru": "10"
+            "position": "T1",
+            "score": "-11",
+            "today": "-3",
+            "thru": "11"
         },
         "Rory McIlroy": {
-            "position": "2",
+            "position": "T1",
             "score": "-11",
             "today": "E",
             "thru": "9"
@@ -20,20 +20,20 @@
             "today": "-6",
             "thru": "17"
         },
+        "Russell Henley": {
+            "position": "T3",
+            "score": "-10",
+            "today": "-4",
+            "thru": "13"
+        },
         "Cameron Young": {
             "position": "T3",
             "score": "-10",
             "today": "+1",
             "thru": "9"
         },
-        "Russell Henley": {
-            "position": "T5",
-            "score": "-9",
-            "today": "-3",
-            "thru": "12"
-        },
         "Scottie Scheffler": {
-            "position": "T5",
+            "position": "6",
             "score": "-9",
             "today": "-2",
             "thru": "12"
@@ -50,59 +50,59 @@
             "today": "-4",
             "thru": "16"
         },
+        "Collin Morikawa": {
+            "position": "T9",
+            "score": "-7",
+            "today": "-2",
+            "thru": "14"
+        },
         "Sam Burns": {
-            "position": "9",
+            "position": "T9",
             "score": "-7",
             "today": "+3",
             "thru": "10"
         },
-        "Brooks Koepka": {
-            "position": "T10",
-            "score": "-6",
-            "today": "-2",
-            "thru": "16"
-        },
         "Jake Knapp": {
-            "position": "T10",
+            "position": "T11",
             "score": "-6",
             "today": "-1",
             "thru": "15"
         },
-        "Collin Morikawa": {
-            "position": "T10",
-            "score": "-6",
-            "today": "-1",
-            "thru": "13"
-        },
         "Shane Lowry": {
-            "position": "T10",
+            "position": "T11",
             "score": "-6",
             "today": "+3",
             "thru": "10"
         },
         "Jordan Spieth": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "-4",
             "thru": "F"
         },
         "Hideki Matsuyama": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "-3",
             "thru": "F"
         },
+        "Brooks Koepka": {
+            "position": "T13",
+            "score": "-5",
+            "today": "-1",
+            "thru": "17"
+        },
         "Patrick Cantlay": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "+1",
             "thru": "12"
         },
         "Jason Day": {
-            "position": "T14",
+            "position": "T13",
             "score": "-5",
             "today": "+3",
-            "thru": "10"
+            "thru": "11"
         },
         "Viktor Hovland": {
             "position": "T18",
@@ -156,7 +156,7 @@
             "position": "T24",
             "score": "-3",
             "today": "+1",
-            "thru": "16"
+            "thru": "17"
         },
         "Matt McCarty": {
             "position": "T27",
