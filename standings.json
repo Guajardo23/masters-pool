@@ -3,34 +3,34 @@
     "status": "In Progress",
     "golfers": {
         "Justin Rose": {
-            "position": "T1",
+            "position": "1",
             "score": "-11",
             "today": "-3",
             "thru": "8"
         },
-        "Cameron Young": {
-            "position": "T1",
-            "score": "-11",
-            "today": "E",
-            "thru": "6"
-        },
         "Russell Henley": {
-            "position": "3",
+            "position": "T2",
             "score": "-10",
             "today": "-4",
-            "thru": "9"
+            "thru": "10"
+        },
+        "Cameron Young": {
+            "position": "T2",
+            "score": "-10",
+            "today": "+1",
+            "thru": "7"
+        },
+        "Rory McIlroy": {
+            "position": "T2",
+            "score": "-10",
+            "today": "+1",
+            "thru": "7"
         },
         "Scottie Scheffler": {
-            "position": "T4",
+            "position": "5",
             "score": "-9",
             "today": "-2",
             "thru": "9"
-        },
-        "Rory McIlroy": {
-            "position": "T4",
-            "score": "-9",
-            "today": "+2",
-            "thru": "6"
         },
         "Tyrrell Hatton": {
             "position": "T6",
@@ -102,7 +102,7 @@
             "position": "T13",
             "score": "-5",
             "today": "+1",
-            "thru": "10"
+            "thru": "11"
         },
         "Jason Day": {
             "position": "T13",
@@ -122,12 +122,6 @@
             "today": "-5",
             "thru": "F"
         },
-        "Michael Brennan": {
-            "position": "T19",
-            "score": "-4",
-            "today": "-1",
-            "thru": "16"
-        },
         "Matt Fitzpatrick": {
             "position": "T19",
             "score": "-4",
@@ -138,58 +132,64 @@
             "position": "T19",
             "score": "-4",
             "today": "E",
-            "thru": "13"
+            "thru": "14"
         },
         "Collin Morikawa": {
             "position": "T19",
             "score": "-4",
             "today": "+1",
-            "thru": "10"
+            "thru": "11"
         },
         "Keegan Bradley": {
-            "position": "T25",
+            "position": "T24",
             "score": "-3",
             "today": "-6",
             "thru": "F"
         },
         "Ben Griffin": {
-            "position": "T25",
+            "position": "T24",
             "score": "-3",
             "today": "+2",
             "thru": "12"
         },
         "Matt McCarty": {
-            "position": "T27",
+            "position": "T26",
             "score": "-2",
             "today": "-3",
             "thru": "F"
         },
         "Adam Scott": {
-            "position": "T27",
+            "position": "T26",
             "score": "-2",
             "today": "-2",
             "thru": "F"
         },
         "Samuel Stevens": {
-            "position": "T27",
+            "position": "T26",
             "score": "-2",
             "today": "-2",
             "thru": "F"
         },
         "Chris Gotterup": {
-            "position": "T27",
+            "position": "T26",
             "score": "-2",
             "today": "+1",
             "thru": "F"
         },
+        "Michael Brennan": {
+            "position": "T26",
+            "score": "-2",
+            "today": "+1",
+            "thru": "17"
+        },
         "Brian Campbell": {
-            "position": "T27",
+            "position": "T26",
             "score": "-2",
             "today": "+1",
             "thru": "15"
         },
         "Wyndham Clark": {
-            "position": "T27",
+            "position": "T26",
             "score": "-2",
             "today": "+2",
             "thru": "14"
